@@ -31,6 +31,7 @@
 # 8: run service to test: systemctl start ipmitool.service ctrl x to exit
 # 9: Enable service at startup: systemctl enable ipmitool.service
 # 10: use systemctl status ipmitool.service to check status
+#
 # ----------------------------------------------------------------------------------
 
 # IPMI SETTINGS:
