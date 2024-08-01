@@ -17,14 +17,14 @@
 # 3: run ./ipmitools.sh to see if the script runs correct ctrl x to exit
 # 4: create new service: nano /etc/systemd/system/ipmitools.service
 # 5: insert the following:
-#[Unit]
-#Description=ipmitool fan control
-#
-#[Service]
-#ExecStart=/pathtoscript/ipmitool.sh
-#
-#[Install]
-#WantedBy=multi-user.target
+[Unit]
+Description=ipmitool fan control
+
+[Service]
+ExecStart=/pathtoscript/ipmitool.sh
+
+[Install]
+WantedBy=multi-user.target
 #
 # 6: save file
 # 7: reload systemctl deamon using: systemctl daemon-reload 
