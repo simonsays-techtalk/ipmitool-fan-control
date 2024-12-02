@@ -108,10 +108,6 @@ elif [[ $CPUTEMP > 72 ]]; then
 elif [[ $CPUTEMP > 70 ]]; then
   setfans 35
 else
-  #echo   "Temps OK (SYS: $SYSTEMP C, CPU: $CPUTEMP C)"
-  # healthchecks.io #curl -fsS --retry 3 https://hchk.io/XXX >/dev/null 2>&1
-  #printf "Temps OK (SYS: $SYSTEMP C, CPU: $CPUTEMP C)" | systemd-cat -t R610-IPMI-TEMP
-  #20% good idle speed..
   setfans 20
 fi
 
